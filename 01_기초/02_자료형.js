@@ -42,7 +42,7 @@
 
 // let names = "이정환";
 // let locations = "역곡";
-// let introduce = `${names}은 ${locations}에 살고 있습니다.`; ''은 문자안에 변수를 넣을 수 있다.
+// let introduce = `${names}은 ${locations}에 살고 있습니다.`;      // ``은 문자안에 변수를 넣을 수 있다.
 // let introduce2 = `홍길동은 알파시티에 살고 있습니다.`;
 // console.log(introduce);
 // console.log(introduce2);
@@ -110,14 +110,19 @@
 // console.log(typeof strB); // string
 // console.log(typeof strC); // string
 
-let varA = "하이";
-let varB = 0;
-let varC = "";
+// let varA = "하이";
+// let varB = 0;
+// let varC = "";
 
-let boolA = Boolean(varA);
-let boolB = Boolean(varB);
-let boolC = Boolean(varC);
+// let boolA = Boolean(varA);
+// let boolB = Boolean(varB);
+// let boolC = Boolean(varC);
 
-console.log(boolA);  /true
-console.log(boolB);  /false
-console.log(boolC);  /false
+// console.log(boolA);  /true
+// console.log(boolB);  /false
+// console.log(boolC);  /falsest
+
+// let str = "8";
+// let num = parseInt(str, 10);
+// console.log(num);
+// console.log(console.log(num));

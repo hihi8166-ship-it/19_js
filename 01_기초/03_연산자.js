@@ -25,7 +25,7 @@
 // console.log(number);
 
 // 증감 연산자
-// let a = 1;
+// let a = 5;
 // a++;
 // console.log(a);
 
