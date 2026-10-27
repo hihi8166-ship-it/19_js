@@ -13,7 +13,7 @@ let arrA = new Array(); // 배열 생성자
 // console.log(food[2]);
 // console.log(food[3]);
 
-let food = ["짜장면", "피자", "치킨"];
-food[2] = "파스타";
-food[3] = "레몬";
-console.log(food);
+// let food = ["짜장면", "피자", "치킨"];
+// food[2] = "파스타";
+// food[3] = "레몬";
+// console.log(food);
