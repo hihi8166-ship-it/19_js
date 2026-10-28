@@ -84,3 +84,15 @@
 
 // const name = "이정환" || undefined;
 // console.log(name);
+
+// const name = ("이정환" && "학교") || undefined;
+// console.log(name);
+
+// const name = "이정환" || 0;
+// console.log(name);
+
+// const name = "이정환" && undefined; // truth를 출력하기 위함 (truth and false 니까 결과값이 undefined)
+// console.log(name);
+
+// const name = "이정환" ?? 0;
+// console.log(name);

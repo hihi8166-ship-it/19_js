@@ -26,10 +26,18 @@
 // let numB = 1;
 // console.log(numA === numB);
 
-let person = {
-  name: "이정환",
-};
-let man = {
-  name: "이정환",
-};
-console.log(person === man);
+// let person = {
+//   name: "이정환",
+// };
+// let man = {
+//   name: "이정환",
+// };
+// console.log(person === man);
+
+// let arr1 = [1, 2, 3];              // 아래랑 값이 같음.
+// let arr2 = [1, 2, 3];
+// console.log((arr1 = arr2));
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [1, 2, 3];
+// console.log([1, 2, 3]);
