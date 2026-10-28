@@ -20,9 +20,23 @@
 //   console.log('""은 falsy한 값입니다.');
 // }
 
-let varA;
-if (varA) {
-  console.log("값이 있음");
+const num = -0;
+if (num) {
+  console.log("123");
 } else {
-  console.log("값이 없음");
+  console.log("456");
 }
+
+// const str = "";
+// if (str) {
+//   console.log("123");
+// } else {
+//   console.log("456");
+// }
+
+// let varA;
+// if (varA) {
+//   console.log("값이 있음");
+// } else {
+//   console.log("값이 없음");
+// }

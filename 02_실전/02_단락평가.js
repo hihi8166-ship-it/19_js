@@ -1,6 +1,6 @@
-// AND 단락평가
+// AND 단락평가 (첫번째 조건에서 판단한것으로 끝낼 수 있으면 두번째 판단은 생략한다)
 
-// function calcA() {
+// // function calcA() {
 //   console.log("a");
 //   return false;
 // }
