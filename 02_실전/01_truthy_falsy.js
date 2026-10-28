@@ -20,12 +20,12 @@
 //   console.log('""은 falsy한 값입니다.');
 // }
 
-const num = -0;
-if (num) {
-  console.log("123");
-} else {
-  console.log("456");
-}
+// const num = -0;                    // "-0" 으로 처음 입력하니까 문자로 인식해서 123이 출력됨
+// if (num) {
+//   console.log("123");
+// } else {
+//   console.log("456");
+// }
 
 // const str = "";
 // if (str) {
