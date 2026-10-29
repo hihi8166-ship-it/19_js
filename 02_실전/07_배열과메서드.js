@@ -1,4 +1,4 @@
-// 젤 뒷요소 추가
+// 젤 뒷요소 추가  , push는 맨 뒷에 함수를 추가한 후 전체 길이인 4를 반환함. 즉, 넣고 갯수를 반환까지 하는 함수
 // let food = ["짜장면", "피자", "치킨"];
 // const a = food.push("탕수육");
 // console.log(food);
@@ -16,11 +16,12 @@
 // console.log(removedItem);
 // console.log(food);
 
-// shift (맨 앞요소 삭제)
-// let food = ["짜장면", "피자", "치킨"];
-// const removedItem = food.shift();
+// shift (맨 앞요소 삭제)                       // 추가하는 함수 unshift/push 는 반환값이 배열의 길이
+// let food = ["짜장면", "피자", "치킨"];          // 삭제하는 함수 shift/pop 은 반환값이 삭제한 요소
+// const removedItem = food.shift();             // 원하는 위치에 추가/삭제하는 splice는 반환값이 삭제한 요소들의 배열로 나옴
 // console.log(removedItem);
 // console.log(food);
+// console.log(`새로운 배열의 길이 : ${removedItem}`);
 
 // splice (중간요소 삭제(1,1)) 인덱스 1부터 인덱스 1까지 삭제. 1만 입력하면 인덱스 1부터 모두 삭제.
 // let food = ["짜장면", "피자", "치킨", "탕수육"];
@@ -30,11 +31,17 @@
 
 //중간요소 첨부는?
 // let food = ["짜장면", "피자", "치킨", "탕수육"];
-// food.splice(2, 0, "햄버거");                         //인덱스 2번 위치부터 작업, 기존요소 0개 삭제, 새롭게 추가
+// const a = food.splice(2, 0, "햄버거"); //인덱스 2번 위치부터 작업, 기존요소 0개 삭제, 새롭게 추가
 // console.log(food);
+// console.log(a);
 
 // let food = ["짜장면", "피자", "치킨", "탕수육"];
-// const removedItem = food.splice(1);             // , 안쓰면 앞 숫자부터 끝까지 선택된다
+// const a = food.splice(1, 1);
+// console.log(food);
+// console.log(a);
+
+// let food = ["짜장면", "피자", "치킨", "탕수육"];
+// const removedItem = food.splice(1); // , 안쓰면 앞 숫자부터 끝까지 선택된다
 // console.log(removedItem);
 // console.log(food);
 
@@ -46,7 +53,7 @@
 // console.log(`새로운 배열의 길이 : ${newLength}`);
 
 //슬라이스
-// Array.slice(Start,end);
+// Array.slice(Start, end);
 // let arr = [1, 2, 3];
 // const sliced = arr.slice(0, 2);
 // console.log(arr);
@@ -195,7 +202,10 @@
 // console.log(arr.join());
 // console.log(arr.join("-"));
 
-// reduce (중요)
-let arr = [1, 2, 3, 4, 5];
-let result = arr.reduce((acc, item) => acc + item, 0);
-console.log(result);
+// reduce(중요), *-/+ 다됨. reduce는 하나로 줄인다는 의미
+// let arr = [1, 2, 3, 4, 5];
+// let result = arr.reduce((acc, item) => acc + item, 0);
+// console.log(result);
+
+// let arr = [1, 2, 3, 4, 5];                  // 콘솔로그에 그대로 넣어도 값 동일함.
+// console.log(arr.reduce((acc, item) => acc + item, 0));

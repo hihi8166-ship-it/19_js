@@ -86,3 +86,35 @@
 // date.setMinutes(1);
 // date.setSeconds(1);
 // console.log(date);
+
+//date 객체 출력하기
+//toString
+// const today = new Date(2000, 9, 10, 22);
+// console.log(today);
+// console.log(today.toString());
+
+//toDateString
+// const today = new Date(2000, 9, 10, 22);
+// console.log(today);
+// console.log(today.toDateString());
+
+//toLocaleString, toLocaleDateString
+// const today = new Date(2000, 9, 10, 22);
+// console.log(today.toLocaleString());
+
+//date 객체 응용하기
+// n월씩 이동하기
+function moveMonth(date, moveMonth) {
+  const curTimestamp = date.getTime(); // 날짜를 1970년 1월1일 0초부터 경과한 밀리초 숫자로 변환
+  const curMonth = date.getMonth(); // 날짜에서 월을 가져온다. (1월:0, 12월:11), 즉, 2000.10.10의 결과는 9
+
+  const resDate = new Date(curTimestamp); // 새로운 날짜 객체 생성(앞에서 저장한 날짜숫자)
+  resDate.setMonth(curMonth + moveMonth); // 새로 만든 날짜.날짜의 월일을 변경(기존 월 + 이동할 개월 수)
+  return resDate; // 함수에서 결과를 돌려준다 변경된 날짜 객체
+}
+const dateA = new Date("2000-10-10"); // "2000-10-10" 만들고 출력
+console.log("A: ", dateA);
+const dateB = moveMonth(dateA, 1); // dateA에서 1개월 뒤의 날짜를 구하고 그 결과를 dateB에 저장
+console.log("B: ", dateB);
+const dateC = moveMonth(dateA, -1); // dateA에서 1개월 전의 날짜를 구하고 그 결과를 dateC에 저장
+console.log("C: ", dateC);
